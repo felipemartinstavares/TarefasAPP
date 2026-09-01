@@ -8,7 +8,6 @@ class Item(
     var expandido = false
     var deletado = false
     var concluido = false
-    var exibirDescricao = false
 
     fun expandir() {
         if(subItens.isNullOrEmpty()) {

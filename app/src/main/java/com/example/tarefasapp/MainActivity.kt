@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -23,5 +24,20 @@ class MainActivity : ComponentActivity() {
 
             }
         }
+    }
+}
+@Composable
+fun corpo(modifier: Modifier = Modifier, conteudo: @Composable () -> Unit?) {
+    Box(modifier = modifier) {
+        conteudo()
+    }
+}
+
+@Composable
+@Preview(showBackground = true)
+fun corpoPreview() {
+    TarefasAPPTheme {
+        corpo(modifier = Modifier.fillMaxSize(), {
+        })
     }
 }
