@@ -37,7 +37,9 @@ fun corpo(modifier: Modifier = Modifier, conteudo: @Composable () -> Unit?) {
 @Preview(showBackground = true)
 fun corpoPreview() {
     TarefasAPPTheme {
-        corpo(modifier = Modifier.fillMaxSize(), {
-        })
+        corpo(
+            modifier = Modifier.fillMaxSize(),
+            {}
+        )
     }
 }

@@ -1,6 +1,6 @@
 package com.example.tarefasapp.Objetos
 
-class Item(
+public class Item(
     val nome: String,
     val descricao: String,
     val subItens: MutableList<Item>?
