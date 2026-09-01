@@ -15,17 +15,24 @@ public class Item(
         }
     }
 
+    fun voltarTarefaInicio() {
+        // vai voltar para a tela inicial com as tarefas
+    }
+
     fun deletar() {
         deletado = true
+        // deletar da exibição das tarefas, não é permanente
     }
 
     fun concluir() {
         concluido = true
+        // vai mudar apenas a cor para identificação
     }
 
     fun exibirDescricao() {
         if(expandido) {
             println(descricao)
+            // expandir para ver subItens
         }
     }
 }
